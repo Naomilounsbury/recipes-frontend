@@ -89,6 +89,9 @@ function RecipeDetailsForm({ recipe: initialRecipe, notify }) {
             case "delete-rating":
                 setRatings(ratings.filter(e => e.ratingId !== rating.ratingId));
                 break;
+                
+            default: 
+                throw new Error("unknown something")
         }
         
         setError("");
