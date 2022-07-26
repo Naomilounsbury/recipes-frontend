@@ -20,7 +20,7 @@ function RecipeDetailsForm({ recipe: initialRecipe, notify }) {
     const [showRatingForm, setShowRatingForm] = useState(false);
     const [scopedRating, setScopedRating] = useState({});
     const [error, setError] = useState();
-
+    console.log(setRecipe);
     function addIngredientClick() {
         setScopedIngredient({ ingredientId: 0, recipeId: recipe.recipeId, name: "", description: "", amount: 0 });
         setShowIngredientForm(true);
